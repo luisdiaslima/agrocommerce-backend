@@ -1,3 +1,6 @@
 import mongoose from 'mongoose';
+import dotenv from 'dotenv';
 
-mongoose.connect('mongodb+srv://luis:99443175br@cursonode-r2590.mongodb.net/apicommerce?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true });
+dotenv.config();
+
+mongoose.connect(`mongodb+srv://luis:${process.env.DATABASE_PASSWORD}@cursonode-r2590.mongodb.net/apicommerce?retryWrites=true&w=majority`, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true });
