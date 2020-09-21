@@ -1,6 +1,6 @@
 <h3 align="center">
 
-    Em desenvolvimento
+    API for my e-commerce
     
 </h3>
 
